@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Book, setOpenedModal } from "../../store/reducers/bookSlice";
 import { AppDispatch } from "../../store/store";
 import { ModalHome } from "./components/Modal";
+import BannerSection from "./sections";
 
 interface StateBooks {
   book: {
@@ -20,6 +21,8 @@ export const Home: React.FC = () => {
 
   return (
     <main className="flex flex-col justify-center items-center h-screen bg-gray-100">
+      <BannerSection />
+
       <div
         className=" flex justify-between items-center w-full px-10 py-5
       "
